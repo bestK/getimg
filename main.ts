@@ -64,6 +64,8 @@ async function uploadToOm(file: File, cookies: string): Promise<{ success: boole
             body: uploadFormData,
         });
 
+
+
         if (!res.ok) {
             const errorText = await res.text();
             return { success: false, error: errorText };
@@ -76,7 +78,8 @@ async function uploadToOm(file: File, cookies: string): Promise<{ success: boole
             return { success: false, error: result?.response?.msg || "上传失败" };
         }
     } catch (error) {
-        return { success: false, error: error.message };
+        console.error(`'上传失败, ${error.message}`)
+        return { success: false, error: '上传失败,请检查Cookie是否有效' };
     }
 }
 
