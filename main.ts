@@ -161,7 +161,7 @@ function getHomePage(): string {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>高级图床上传服务</title>
+      <title>简单图床上传服务</title>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
       <style>
         :root {
@@ -410,7 +410,7 @@ function getHomePage(): string {
     <body>
       <div class="container">
         <header>
-          <h1>高级图床上传服务</h1>
+          <h1>简单图床上传服务</h1>
           <p class="subtitle">安全、快速、稳定的图片托管解决方案</p>
         </header>
         
@@ -451,7 +451,12 @@ function getHomePage(): string {
         </div>
         
         <footer>
-          <p>© ${new Date().getFullYear()} 高级图床服务 · 所有权利保留</p>
+          <p>© ${new Date().getFullYear()} 简单图床服务 · 所有权利保留</p>
+          <p>
+            <a href="https://github.com/bestK/getimg" target="_blank" rel="noopener noreferrer" style="color: var(--gray); text-decoration: none;">
+              在 GitHub 上查看源码
+            </a>
+          </p>
         </footer>
       </div>
       
